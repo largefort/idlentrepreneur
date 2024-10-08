@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+#stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#businesses, #upgrades, #achievements, #leveling {
+    width: 20%;
+}
+
+button {
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#achievement-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#achievement-list li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.locked {
+    opacity: 0.5;
+    color: gray;
+}
+
+.unlocked {
+    background-color: #ffd700;
+    color: black;
+}
