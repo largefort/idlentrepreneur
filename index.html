@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneur Tycoon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Entrepreneur Tycoon</h1>
+        <div id="stats">
+            <p>Money: $<span id="money">1000</span></p>
+            <p>Time Passed: <span id="time">0</span> Days</p>
+        </div>
+    </header>
+    
+    <main>
+        <section id="businesses">
+            <h2>Your Businesses</h2>
+            <div id="business-list">
+                <!-- Businesses will be dynamically added here -->
+            </div>
+        </section>
+
+        <aside id="upgrades">
+            <h2>Available Businesses</h2>
+            <button onclick="startBusiness('restaurant')">Start Restaurant ($500)</button>
+            <button onclick="startBusiness('tech')">Start Tech Company ($1000)</button>
+        </aside>
+        
+        <aside id="achievements">
+            <h2>Achievements</h2>
+            <ul id="achievement-list"></ul>
+        </aside>
+        
+        <div id="leveling">
+            <h2>Player Progression</h2>
+            <p>Level: <span id="level">1</span></p>
+            <p>XP: <span id="xp">0</span> / <span id="xpToNextLevel">100</span></p>
+        </div>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
